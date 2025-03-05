@@ -28,6 +28,7 @@ const GuessTheCountryScreen = (props) => {
     const checkAnswer = () => {
         if (answer.toLowerCase() === countryList[index]) {
             setResult('true');
+            setScore(score + 10);
         }
         else {
             setResult('false');

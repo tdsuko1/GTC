@@ -2,7 +2,8 @@ import React from 'react';
 import { View, Text, ImageBackground, Image, TouchableOpacity }
 from 'react-native';
 
-const WinScreen = () => {
+const WinScreen = (props) => {
+    const { navigation } = props;
     return (
        <View style={{ flex: 1 }}> 
            <ImageBackground
